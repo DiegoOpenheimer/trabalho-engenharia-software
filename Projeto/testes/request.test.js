@@ -18,7 +18,7 @@ describe('getting products', ()=>{
         .expect(200)
         .end((err, result) => {
             expect(result.body.content).to.be.a('array')
-            expect(result.body.operation).to.equal('done').and.to.be.a('string')
+            expect(result.body.operation).to.equal('done').and.to.be.a('number')
             done()
         })
     })
